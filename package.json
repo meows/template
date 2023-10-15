@@ -1,0 +1,7 @@
+{
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "latest",
+    "typescript": "latest"
+  }
+}
