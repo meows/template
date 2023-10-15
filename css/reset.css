@@ -1,0 +1,84 @@
+/* —————————————————————————————————————————————————————————————————————————————
+   CSS Reset
+*/
+
+html {
+   box-sizing: border-box;
+   -moz-text-size-adjust: none;
+   -webkit-text-size-adjust: none;
+   text-size-adjust: none;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  scrollbar-gutter: stable both-edges;
+  position: relative;
+  min-height: 100vh;
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, button, input, label {
+  line-height: 1.1;
+}
+
+h1, h2, h3, h4 {
+   text-wrap: balance;
+}
+
+/* for react z-index */
+#root, #__next {
+  isolation: isolate;
+}
+
+address, cite {
+  font-style: normal;
+}
+
+hr {
+  border: none;
+}
+
+output {
+  display: block;
+}
+
+ul, ol {
+  padding: 0;
+  list-style: none;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/**
+
+[1]: https://chriscoyier.net/2023/10/03/being-picky-about-a-css-reset-for-fun-pleasure/
+[2]: https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/
+
+*/
