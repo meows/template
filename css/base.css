@@ -1,0 +1,42 @@
+/* —————————————————————————————————————————————————————————————————————————————
+   CSS Base
+*/
+
+textarea:not([rows]) {
+   min-height: 10em;
+}
+
+body {
+   scrollbar-gutter: stable both-edges;
+}
+
+:target {
+   scroll-margin-block: 5ex;
+}
+
+/* -----------------------------------------------------------------------------
+   Typography
+*/
+
+h1, h2, h3, h4, button, input, label {
+   line-height: 1.1;
+}
+
+h1, h2, h3, h4 {
+   text-wrap: balance;
+}
+
+output {
+   display: block;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+   overflow-wrap: break-word;
+}
+
+/* —————————————————————————————————————————————————————————————————————————————
+   References:
+
+   [1]: https://chriscoyier.net/2023/10/03/being-picky-about-a-css-reset-for-fun-pleasure/
+
+*/

@@ -3,10 +3,10 @@
 */
 
 html {
-   box-sizing: border-box;
-   -moz-text-size-adjust: none;
-   -webkit-text-size-adjust: none;
-   text-size-adjust: none;
+  box-sizing: border-box;
+  -moz-text-size-adjust: none; /* ref [2] */
+  -webkit-text-size-adjust: none; /* ref [2] */
+  text-size-adjust: none; /* ref [2] */
 }
 
 *, *::before, *::after {
@@ -18,7 +18,6 @@ html {
 }
 
 body {
-  scrollbar-gutter: stable both-edges;
   position: relative;
   min-height: 100vh;
   font-size: 100%;
@@ -34,18 +33,6 @@ input, button, textarea, select {
   font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
-}
-
-h1, h2, h3, h4, button, input, label {
-  line-height: 1.1;
-}
-
-h1, h2, h3, h4 {
-   text-wrap: balance;
-}
-
 /* for react z-index */
 #root, #__next {
   isolation: isolate;
@@ -59,26 +46,15 @@ hr {
   border: none;
 }
 
-output {
-  display: block;
-}
-
 ul, ol {
   padding: 0;
   list-style: none;
 }
 
-textarea:not([rows]) {
-  min-height: 10em;
-}
+/* —————————————————————————————————————————————————————————————————————————————
+   References
 
-:target {
-  scroll-margin-block: 5ex;
-}
-
-/**
-
-[1]: https://chriscoyier.net/2023/10/03/being-picky-about-a-css-reset-for-fun-pleasure/
-[2]: https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/
-
+   [1]: https://chriscoyier.net/2023/10/03/being-picky-about-a-css-reset-for-fun-pleasure/
+   [2]: https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/
+   
 */
