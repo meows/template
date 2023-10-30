@@ -29,17 +29,13 @@ img, picture, video, canvas, svg {
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input, button, textarea, select, address, cite {
   font: inherit;
 }
 
 /* for react z-index */
 #root, #__next {
   isolation: isolate;
-}
-
-address, cite {
-  font-style: normal;
 }
 
 hr {
