@@ -8,6 +8,7 @@ textarea:not([rows]) {
 
 body {
    scrollbar-gutter: stable both-edges;
+   hanging-punctuation: first allow-end last; /* 2 */
 }
 
 :target {
@@ -38,5 +39,5 @@ p, h1, h2, h3, h4, h5, h6 {
    References:
 
    [1]: https://chriscoyier.net/2023/10/03/being-picky-about-a-css-reset-for-fun-pleasure/
-
+   [2]: https://chriscoyier.net/2023/11/27/the-hanging-punctuation-property-in-css/
 */
