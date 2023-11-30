@@ -31,7 +31,9 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 # Yarn Integrity file
 .yarn-integrity
 
+# ————————————————————————————————————————————————————————————————————————————————————————
 # Logs
+
 logs
 _.log
 npm-debug.log_
